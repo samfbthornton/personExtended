@@ -1,57 +1,39 @@
 package personextended; //name,age,colour,speak()
 
-public class Dog {
+public class Dog extends Pet {
 
-	private String name;
-	private int age;
-	private String colour;
+	private String breed;
 
-	public Dog(String name, int age, String colour) {
-		this.name = name;
-		this.age = age;
-		this.colour = colour;
+	public Dog(String breed) {
+		super("Dog", "Fido", 12, "Chocolate");
+		this.breed = breed;
 
 	}
 
-	public Dog() {
-
-	}
-
+	@Override
 	public void print() {
-		System.out.println("Name: ");
-		System.out.println(this.name);
-		System.out.println("Age: ");
-		System.out.println(this.age);
-		System.out.println("Colour: ");
-		System.out.println(this.colour);
+		System.out.print("\nSpecies: ");
+		System.out.print(this.getSpecies());
+		System.out.print(", Breed: ");
+		System.out.print(this.breed);
+		System.out.print(", Name: ");
+		System.out.print(this.getName());
+		System.out.print(", Age: ");
+		System.out.print(this.getAge());
+		System.out.print(", Colour: ");
+		System.out.println(this.getColour());
 	}
 
+	@Override
 	public void speak() {
 		System.out.println("Woof");
 	}
 
-	public String getName() {
-		return name;
+	public String getBreed() {
+		return breed;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setBreed(String breed) {
+		this.breed = breed;
 	}
-
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-	public String getColour() {
-		return colour;
-	}
-
-	public void setColour(String colour) {
-		this.colour = colour;
-	}
-
 }

@@ -8,8 +8,7 @@ public class Person {
 	private String name;
 	private int age;
 	private String jobTitle;
-	private ArrayList<Cat> cats = new ArrayList<>();
-	private ArrayList<Dog> dogs = new ArrayList<>();
+	private ArrayList<Pet> pets = new ArrayList<>();
 
 	public Person(String name, int age, String jobTitle) {
 		super();
@@ -25,23 +24,12 @@ public class Person {
 
 	// Behaviours - what it does.
 
-	public void addCat(Cat cat) {
-		this.cats.add(cat);
-
+	public void addPet(Pet pet) {
+		this.pets.add(pet);
 	}
 
-	public void removeCat(Cat cat) {
-		this.cats.remove(cat);
-	}
-
-	public void addDog(Dog dog) {
-
-		this.dogs.add(dog);
-
-	}
-
-	public void removeDog(Dog dog) {
-		dogs.remove(dog);
+	public void removePet(Pet pet) {
+		this.pets.remove(pet);
 	}
 
 	public void Print() {
@@ -49,18 +37,15 @@ public class Person {
 		System.out.println(this.name);
 		System.out.print("Age: ");
 		System.out.println(this.age);
-		System.out.print("Job Title ");
+		System.out.print("Job Title: ");
 		System.out.println(this.jobTitle);
-		System.out.print("Cat: [");
-		for (Cat cat : this.cats) {
-			cat.print();
+		System.out.println("----------------");
+		System.out.println("Pets: ");
+		for (Pet pet : this.pets) {
+			pet.print();
 		}
-		System.out.println("]");
-		System.out.print("Dog: [");
-		for (Dog dog : this.dogs) {
-			dog.print();
-		}
-		System.out.println("]");
+		System.out.println("\n----------------");
+
 	}
 
 	public String getName() {
