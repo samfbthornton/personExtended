@@ -1,6 +1,6 @@
-package personextended; //name,age,colour,speak()
+package personextended;
 
-public class Dog extends Pet {
+public class Dog extends Pet { // replace "extends" with "is a" to ensure it makes sense.
 
 	private String breed;
 
