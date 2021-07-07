@@ -4,6 +4,10 @@ public class Cat extends Pet {
 
 	private String breed;
 
+	public Cat() {
+
+	}
+
 	public Cat(String species, String breed, String name, int age, String colour) {
 		super(species, name, age, colour);
 		this.breed = breed;

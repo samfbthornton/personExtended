@@ -1,6 +1,6 @@
 package personextended;
 
-public class Pet {
+public abstract class Pet {
 
 	private String species;
 	private String name;
@@ -14,9 +14,11 @@ public class Pet {
 		this.colour = colour;
 	}
 
-	public void speak() {
-		System.out.println("I'm the boss of this house!");
+	public Pet() {
+
 	}
+
+	public abstract void speak();
 
 	public void print() {
 
