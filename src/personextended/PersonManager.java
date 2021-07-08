@@ -2,13 +2,12 @@ package personextended; //listperson,addperson(),removeperson(),findpersonbyname
 
 import java.util.ArrayList;
 
-public class PersonManager {
+public class PersonManager implements Speakable {
 
 	private ArrayList<Person> people = new ArrayList<>();
 
 	public void addPerson(Person person) {
 		this.people.add(person);
-
 	}
 
 	public void removePerson(Person person) {
@@ -32,6 +31,11 @@ public class PersonManager {
 			p.Print();
 		}
 		System.out.println("]");
+	}
+
+	@Override
+	public void speak() {
+
 	}
 
 }

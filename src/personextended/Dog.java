@@ -1,8 +1,12 @@
 package personextended;
 
-public class Dog extends Pet { // replace "extends" with "is a" to ensure it makes sense.
+public class Dog extends Pet implements Speakable { // replace "extends" with "is a" to ensure it makes sense.
 
 	private String breed;
+
+	public Dog() {
+
+	}
 
 	public Dog(String breed) {
 		super("Dog", "Fido", 12, "Chocolate");

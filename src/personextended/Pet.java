@@ -1,6 +1,6 @@
 package personextended;
 
-public abstract class Pet {
+public abstract class Pet implements Speakable {
 
 	private String species;
 	private String name;
@@ -17,8 +17,6 @@ public abstract class Pet {
 	public Pet() {
 
 	}
-
-	public abstract void speak();
 
 	public void print() {
 

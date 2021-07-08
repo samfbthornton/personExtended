@@ -1,6 +1,6 @@
 package personextended;
 
-public class Cat extends Pet { // replace "extends" with "is a" to ensure it makes sense.
+public class Cat extends Pet implements Speakable { // replace "extends" with "is a" to ensure it makes sense.
 
 	private String breed;
 

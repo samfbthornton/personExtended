@@ -14,9 +14,19 @@ public class App {
 
 		manager.addPerson(p1);
 
-		manager.print();
+		SpeakableManager speakman = new SpeakableManager();
 
-		Pet pet = new Cat();
-		pet.speak();
+		Person p2 = new Person();
+		Cat c1 = new Cat();
+		Dog d1 = new Dog();
+
+		speakman.addSpeakable(p2);
+		speakman.addSpeakable(c1);
+		speakman.addSpeakable(d1);
+
+		speakman.speak();
+
+		// manager.print();
+
 	}
 }

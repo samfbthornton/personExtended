@@ -2,7 +2,7 @@ package personextended; //name,age,jobtitle,listcat,listdog,addcat/dog,removecat
 
 import java.util.ArrayList;
 
-public class Person {
+public class Person implements Speakable {
 
 	// Attributes
 	private String name;
@@ -46,6 +46,11 @@ public class Person {
 		}
 		System.out.println("\n----------------");
 
+	}
+
+	@Override
+	public void speak() {
+		System.out.println("I love my fluffies!!!");
 	}
 
 	public String getName() {
