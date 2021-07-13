@@ -1,6 +1,6 @@
 package personextended;
 
-public class PersonNotFoundException extends Exception {
+public class PersonNotFoundException extends RuntimeException {
 
 	private static final long serialVersionUID = -1996811581634056261L;
 
