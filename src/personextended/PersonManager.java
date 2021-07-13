@@ -14,14 +14,14 @@ public class PersonManager implements Speakable {
 		this.people.remove(person);
 	}
 
-	public Person findByName(String name) {
+	public Person findByName(String name) throws PersonNotFoundException {
 		for (Person person : this.people) {
 			if (person.getName() == name) {
 
 				return person;
 			}
 		}
-		return null;
+		throw new PersonNotFoundException();
 	}
 
 	public void print() {

@@ -23,8 +23,16 @@ public class App {
 		speakman.addSpeakable(p2);
 		speakman.addSpeakable(c1);
 		speakman.addSpeakable(d1);
+		speakman.addSpeakable(p1);
+		speakman.addSpeakable(new Cat("Cat", "Mog", "Jiji", 7, "Black"));
 
-		speakman.speak();
+		try {
+			manager.findByName("Colin");
+		} catch (PersonNotFoundException pnfe) {
+			System.out.println("That person doesn't exist, buddy. Did you make them up?");
+		}
+
+		// speakman.speak();
 
 		// manager.print();
 
